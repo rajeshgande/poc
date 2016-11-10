@@ -1,0 +1,12 @@
+<ion-view view-title="Patients">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-icon-right" ng-repeat="pt in patients" type="item-text-wrap" href="#/tab/patients/{{pt.PatientId}}">        
+        
+        <h2>{{pt.PatientName}}</h2>
+        <p>{{pt.PatientId}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

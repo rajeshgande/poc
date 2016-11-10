@@ -1,0 +1,40 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="{{patient.PatientName}}">
+  <ion-content>
+     <ion-list>
+        <label class="item item-borderless item-stacked-label" name="PatientId" >
+            <span class="input-label">Patient Id</span>
+            <input type="text" placeholder="Generic Name" ng-model="patient.PatientId" style="font-weight:bold;">                   
+        </label>
+        <label class="item item-borderless item-stacked-label" name="PatientName" style="border:16px 6px 16px 6px;">
+            <span class="input-label">Patient Name</span>
+            <input type="text" placeholder="Patient Name" ng-model="patient.PatientName" style="font-weight:bold;">                   
+        </label>
+        <label class="item item-borderless item-stacked-label" name="MedicalRecordNumber">
+            <span class="input-label">Medical Record Number</span>
+            <input type="text" placeholder="Medical Record Number" ng-model="patient.MedicalRecordNumber" style="font-weight:bold;">                   
+        </label>
+         <label class="item item-borderless item-stacked-label" name="BirthDate">
+            <span class="input-label">Birth Date</span>
+            <input type="text" placeholder="Birth Date" ng-model="patient.BirthDate" style="font-weight:bold;">                   
+        </label>
+         <label class="item item-borderless item-stacked-label" name="RoomNumber">
+            <span class="input-label">Room Number</span>
+            <input type="text" placeholder="Room umber" ng-model="patient.RoomNumber" style="font-weight:bold;">                   
+        </label>
+         <label class="item item-borderless item-stacked-label" name="AdmitDate">
+            <span class="input-label">Admit Date</span>
+            <input type="text" placeholder="AdmitDate" ng-model="patient.AdmitDate" style="font-weight:bold;">                   
+        </label>
+         <label class="item item-borderless item-stacked-label" name="DischargeDate">
+            <span class="input-label">Discharge Date</span>  
+            <input type="text" placeholder="DischargeDate" ng-model="patient.DischargeDate" style="font-weight:bold;">                   
+        </label>
+    </ion-list>     
+  </ion-content>
+</ion-view>
